@@ -1,0 +1,23 @@
+ascii record
+ string(1) rec_type;
+ if(rec_type == "H")
+ ascii record
+ string("ç") file_name;
+ date("YYYYMMDD")("ç") buss_dt;
+ string(1) newline;
+ end header; 
+ else if (rec_type == "D")
+ ascii record
+  decimal("ç")    VendorID;
+  string("ç")    VendorName;
+  string(1) newline;
+ end vend;
+ else 
+ ascii record
+ decimal("ç") no_rec;
+ string(1) nl;
+ end trailer;
+  // Enter your record definition here
+end
+anujaborgohain@hdcbank.com
+9326879330

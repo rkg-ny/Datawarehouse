@@ -1,0 +1,30 @@
+ascii record
+ string(1) rec_type;
+ if(rec_type == "H")
+ ascii record
+ string("ç") file_name;
+ date("YYYYMMDD")("ç") buss_dt;
+ string(1) nl; 
+ end header; 
+ else if (rec_type == "D")
+ ascii record
+  decimal("ç")    ProductID;
+  string("ç")    ProductName;
+  decimal("ç")    SupplierID;
+  decimal("ç")    CategoryID;
+  string("ç")    QuantityPerUnit;
+  decimal("ç")    UnitPrice;
+  decimal("ç")    UnitsInStock;
+  decimal("ç")    UnitsOnOrder;
+  decimal("ç")    ReorderLevel;
+  decimal("ç")    Discontinued;
+  string("ç")    CategoryName;
+  string(1) nl;
+ end cust;
+ else 
+ ascii record
+ decimal("ç") no_rec;
+ string(1) nl;
+ end trailer;
+  // Enter your record definition here
+end

@@ -1,0 +1,29 @@
+ascii record
+ string(1) rec_type;
+ if(rec_type == "H")
+ ascii record
+ string("ç") file_name;
+ date("YYYYMMDD")("ç") buss_dt;
+ string(1) nl; 
+ end header;
+ 
+
+if(rec_type == "T")
+ ascii record
+ decimal("ç") no_rec;
+ decimal("ç") checksum;
+ string(1) nl;
+ end trailer;
+  
+if(rec_type !="H" and rec_type!="T")
+ascii record
+  decimal("ç") custnum;
+  decimal("ç") ordernum;
+  date("YYYYMMDD")("ç") orderdt;
+  string("ç") pymt_method;
+  decimal("ç") productid;
+  decimal("ç") productqty;
+  string(1) newline = "\n";
+  end datat;
+//end data;
+end

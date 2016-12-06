@@ -1,0 +1,16 @@
+utf8 record
+  string("ç") filename;
+  date("YYYYMMDD")("ç") hdrdt;
+  decimal("ç") trlrcnt;
+  string(1) newline = "\n";
+  // Enter your record definition here
+end;
+
+
+ utf8 record
+  string("ç") filename;
+  date("YYYYMMDD")("ç") hdrdt;
+  decimal("ç") trlrcnt;
+  string(1) newline = "\n";
+  // Enter your record definition here
+end;

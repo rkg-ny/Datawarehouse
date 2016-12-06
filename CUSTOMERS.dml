@@ -1,0 +1,19 @@
+ascii record
+decimal("ç") custnum;
+string("ç") fullname;
+string("ç") phone;
+string("ç") email;
+string("ç") street;
+string("ç") city;
+string("ç") zip;
+string("ç") state;
+string("ç") country;
+string("ç") comments;
+string("ç") morecomments;
+string("ç") incomegroup;
+string("ç") randomtext;
+decimal("ç") pref_count;
+string("ç") preference;
+datetime("VMM/DD/YYYY HH24:MI")("ç") customersince; 
+string(1) newline = "\n";
+end

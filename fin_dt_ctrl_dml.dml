@@ -1,0 +1,5 @@
+record
+string(":") date_name;
+date("YYYYMMDD")(":") date_field;
+string(1) nl="\n";
+end
